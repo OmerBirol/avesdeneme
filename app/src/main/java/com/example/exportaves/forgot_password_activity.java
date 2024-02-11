@@ -53,7 +53,7 @@ public class forgot_password_activity extends Activity {
 		hesab_n__aramak_i_in_l_tfen_e_posta_adresini_veya_telefon_numaran__gir = (TextView) findViewById(R.id.hesab_n__aramak_i_in_l_tfen_e_posta_adresini_veya_telefon_numaran__gir);
 		_bg__group_9_ek1 = (View) findViewById(R.id._bg__group_9_ek1);
 		rectangle_27 = (View) findViewById(R.id.rectangle_27);
-		e_posta_telefon = (TextView) findViewById(R.id.e_posta_telefon);
+		e_posta_telefon = (TextView) findViewById(R.id.e_posta_telefon_input2);
 		vector = (ImageView) findViewById(R.id.vector);
 		posta_sms_kutundan_yeni__ifreni_alabilirsin = (TextView) findViewById(R.id.posta_sms_kutundan_yeni__ifreni_alabilirsin);
 	

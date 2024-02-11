@@ -23,12 +23,13 @@
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" >
 
-			<View   android:id="@+id/_bg__start_menu"
-				android:background="@drawable/_bg__start_menu_shape"
-				 android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
+			<View
+				android:id="@+id/_bg__start_menu"
 				android:layout_width="385dp"
-				android:layout_height="802dp" />
+				android:layout_height="802dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/_bg__start_menu_shape" />
 
 			<TextView android:id="@+id/aves_iha_yard_m"
 				android:textStyle="bold"

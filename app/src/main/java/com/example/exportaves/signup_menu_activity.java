@@ -18,6 +18,7 @@
 package com.example.exportaves;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -83,11 +84,11 @@ public class signup_menu_activity extends Activity {
 		rectangle_31 = (View) findViewById(R.id.rectangle_31);
 		rectangle_32 = (View) findViewById(R.id.rectangle_32);
 		vector = (ImageView) findViewById(R.id.vector);
-		e_posta = (TextView) findViewById(R.id.e_posta);
-		ad_soyad = (TextView) findViewById(R.id.ad_soyad);
+		e_posta = (TextView) findViewById(R.id.e_posta_input);
+		ad_soyad = (TextView) findViewById(R.id.ad_soyad_input);
 		telefon = (TextView) findViewById(R.id.telefon);
-		_l__l_e = (TextView) findViewById(R.id._l__l_e);
-		adres_1 = (TextView) findViewById(R.id.adres_1);
+		_l__l_e = (TextView) findViewById(R.id._l__l_e_input);
+		adres_1 = (TextView) findViewById(R.id.adres_1_input);
 		vector_ek1 = (ImageView) findViewById(R.id.vector_ek1);
 		vector_ek2 = (ImageView) findViewById(R.id.vector_ek2);
 		_bg__home_ek1 = (View) findViewById(R.id._bg__home_ek1);
@@ -98,7 +99,7 @@ public class signup_menu_activity extends Activity {
 		polygon_1 = (ImageView) findViewById(R.id.polygon_1);
 		polygon_2 = (ImageView) findViewById(R.id.polygon_2);
 		rectangle_33 = (View) findViewById(R.id.rectangle_33);
-		adres_2 = (TextView) findViewById(R.id.adres_2);
+		adres_2 = (TextView) findViewById(R.id.adres_2_input);
 		_bg__home_ek5 = (View) findViewById(R.id._bg__home_ek5);
 		vector_ek5 = (ImageView) findViewById(R.id.vector_ek5);
 		_bg__home_ek7 = (View) findViewById(R.id._bg__home_ek7);
@@ -106,12 +107,20 @@ public class signup_menu_activity extends Activity {
 		polygon_3 = (ImageView) findViewById(R.id.polygon_3);
 		rectangle_28 = (View) findViewById(R.id.rectangle_28);
 		vector_ek7 = (ImageView) findViewById(R.id.vector_ek7);
-		sifre = (TextView) findViewById(R.id.sifre);
+		sifre = (TextView) findViewById(R.id.sifre_input);
 		_bg__group_ek1 = (View) findViewById(R.id._bg__group_ek1);
 		vector_ek8 = (ImageView) findViewById(R.id.vector_ek8);
 		vector_ek9 = (ImageView) findViewById(R.id.vector_ek9);
-	
-		
+
+		// kayıt ol tusuna basıldıgında kayıt ol eklenıcek
+		kay_t_ol.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(signup_menu_activity.this, sign_success_activity.class);
+				startActivity(intent);
+			}
+		});
 		//custom code goes here
 	
 	}

@@ -18,6 +18,7 @@
 package com.example.exportaves;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -100,16 +101,53 @@ public class login_menu_activity extends Activity {
 		kay_t_ol = (TextView) findViewById(R.id.kay_t_ol);
 		rectangle_28 = (View) findViewById(R.id.rectangle_28);
 		vector_ek1 = (ImageView) findViewById(R.id.vector_ek1);
-		sifre = (TextView) findViewById(R.id.sifre);
+		sifre = (TextView) findViewById(R.id.sifre_input);
 		_bg__group_ek1 = (View) findViewById(R.id._bg__group_ek1);
 		vector_ek2 = (ImageView) findViewById(R.id.vector_ek2);
 		vector_ek3 = (ImageView) findViewById(R.id.vector_ek3);
 		_bg__group_8_ek1 = (View) findViewById(R.id._bg__group_8_ek1);
 		rectangle_27 = (View) findViewById(R.id.rectangle_27);
-		telefon_email = (TextView) findViewById(R.id.telefon_email);
+		telefon_email = (TextView) findViewById(R.id.telefon_email_input);
 		vector_ek4 = (ImageView) findViewById(R.id.vector_ek4);
-	
-		
+
+		//anasayfa tusuna bastıgında ana ekrana dönme click
+		vector_ek3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(login_menu_activity.this, start_menu_activity.class);
+				startActivity(intent);
+			}
+		});
+		// kayıt ol tusuna basıldıgında kayıt ol eklenıcek
+		giri__yap.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(login_menu_activity.this, button_main_activity.class);
+				startActivity(intent);
+			}
+		});
+		//kayıt ol tusuna bastıgında oraya atıvak
+		kay_t_ol.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(login_menu_activity.this, signup_menu_activity.class);
+				startActivity(intent);
+			}
+		});
+
+		//sifremi unuttum tusuna bastıgında oraya atıvak
+		_ifremi_unuttum.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(login_menu_activity.this, forgot_password_activity.class);
+				startActivity(intent);
+			}
+		});
+
 		//custom code goes here
 	
 	}

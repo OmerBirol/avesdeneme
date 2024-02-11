@@ -64,12 +64,13 @@
 
 			</RelativeLayout>
 
-			<View   android:id="@+id/rectangle_29"
-				android:background="@drawable/rectangle_29_shape"
-				 android:layout_marginStart="21dp"
-				android:layout_marginTop="182dp"
+			<View
+				android:id="@+id/rectangle_29"
 				android:layout_width="340dp"
-				android:layout_height="60dp" />
+				android:layout_height="60dp"
+				android:layout_marginStart="21dp"
+				android:layout_marginTop="182dp"
+				android:background="@drawable/rectangle_29_shape" />
 
 			<View   android:id="@+id/rectangle_27"
 				android:background="@drawable/rectangle_27_shape"
@@ -107,55 +108,59 @@
 				android:layout_width="29dp"
 				android:layout_height="24dp" />
 
-			<TextView android:id="@+id/e_posta"
-				android:textSize="20sp"
-				android:textColor="@color/e_posta_color"
+
+			<EditText
+				android:id="@+id/e_posta_input"
+				android:layout_width="148dp"
+				android:layout_height="wrap_content"
 				android:layout_marginLeft="88dp"
 				android:layout_marginTop="200dp"
-				android:layout_width="105dp"
-				android:layout_height="35dp"
-				android:text="@string/e_posta_string"
-				 />
+				android:hint="@string/e_posta_string"
+				android:textColor="@color/e_posta_color"
+				android:textSize="20sp" />
 
-			<TextView android:id="@+id/ad_soyad"
+			<EditText
+				android:id="@+id/ad_soyad_input"
 				android:textSize="20sp"
 				android:textColor="@color/e_posta_color"
 				android:layout_marginLeft="87dp"
 				android:layout_marginTop="115dp"
+				android:hint="@string/ad_soyad_string"
 				android:layout_width="150dp"
 				android:layout_height="44dp"
-				android:text="@string/ad_soyad_string"
 				 />
 
-			<TextView android:id="@+id/telefon"
+			<EditText android:id="@+id/telefon"
 				android:textSize="20sp"
 				android:textColor="@color/e_posta_color"
 				android:layout_marginLeft="87dp"
 				android:layout_marginTop="279dp"
 				android:layout_width="149dp"
 				android:layout_height="45dp"
-				android:text="@string/telefon_string"
+				android:hint="@string/telefon_string"
 				 />
 
-			<TextView android:id="@+id/_l__l_e"
+			<EditText
+				android:id="@+id/_l__l_e_input"
 				android:textSize="20sp"
 				android:textColor="@color/e_posta_color"
 				android:layout_marginLeft="88dp"
 				android:layout_marginTop="362dp"
+				android:hint="@string/_l__l_e_string"
 				android:layout_width="149dp"
-				android:layout_height="44dp"
-				android:text="@string/_l__l_e_string"
-				 />
+				android:layout_height="44dp" />
 
-			<TextView android:id="@+id/adres_1"
+
+			<EditText
+				android:id="@+id/adres_1_input"
 				android:textSize="20sp"
 				android:textColor="@color/e_posta_color"
 				android:layout_marginLeft="84dp"
 				android:layout_marginTop="447dp"
+				android:hint="@string/adres_1_string"
 				android:layout_width="149dp"
-				android:layout_height="44dp"
-				android:text="@string/adres_1_string"
-				 />
+				android:layout_height="44dp" />
+
 
 			<ImageView android:id="@+id/vector_ek1"
 				android:src="@drawable/vector_ek1"
@@ -254,15 +259,16 @@
 				android:layout_width="340dp"
 				android:layout_height="60dp" />
 
-			<TextView android:id="@+id/adres_2"
+			<EditText
+				android:id="@+id/adres_2_input"
 				android:textSize="20sp"
 				android:textColor="@color/e_posta_color"
 				android:layout_marginLeft="84dp"
 				android:layout_marginTop="529dp"
+				android:hint="@string/adres_2_string"
 				android:layout_width="149dp"
-				android:layout_height="44dp"
-				android:text="@string/adres_2_string"
-				 />
+				android:layout_height="44dp" />
+
 
 
 			<RelativeLayout android:id="@+id/home_ek4"
@@ -336,16 +342,15 @@
 				android:layout_marginTop="606dp"
 				android:layout_width="24dp"
 				android:layout_height="29dp" />
-
-			<TextView android:id="@+id/sifre"
+			<EditText
+				android:id="@+id/sifre_input"
 				android:textSize="20sp"
 				android:textColor="@color/e_posta_color"
 				android:layout_marginLeft="83dp"
 				android:layout_marginTop="607dp"
+				android:hint="@string/sifre_string"
 				android:layout_width="152dp"
-				android:layout_height="44dp"
-				android:text="@string/sifre_string"
-				 />
+				android:layout_height="44dp" />
 
 
 			<RelativeLayout android:id="@+id/group"

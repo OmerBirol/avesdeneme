@@ -18,6 +18,7 @@
 package com.example.exportaves;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -98,8 +99,15 @@ public class sign_success_activity extends Activity {
 		vector_ek22 = (ImageView) findViewById(R.id.vector_ek22);
 		vector_ek23 = (ImageView) findViewById(R.id.vector_ek23);
 		vector_ek24 = (ImageView) findViewById(R.id.vector_ek24);
-	
-		
+
+		devam_et.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(sign_success_activity.this, login_menu_activity.class);
+				startActivity(intent);
+			}
+		});
 		//custom code goes here
 	
 	}

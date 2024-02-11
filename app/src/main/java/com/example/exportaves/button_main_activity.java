@@ -18,6 +18,7 @@
 package com.example.exportaves;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -48,8 +49,27 @@ public class button_main_activity extends Activity {
 		icon_08 = (ImageView) findViewById(R.id.icon_08);
 		yardim__ste = (TextView) findViewById(R.id.yardim__ste);
 		adres_bilgilerimi_g_ncelle = (TextView) findViewById(R.id.adres_bilgilerimi_g_ncelle);
-	
-		
+
+		// kayıt ol tusuna basıldıgında kayıt ol eklenıcek
+		adres_bilgilerimi_g_ncelle.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(button_main_activity.this, profile_update_activity.class);
+				startActivity(intent);
+			}
+		});
+
+
+		_bg__circle_ek1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(button_main_activity.this, help_menu_activity.class);
+				startActivity(intent);
+			}
+		});
+
 		//custom code goes here
 	
 	}

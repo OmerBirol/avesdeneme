@@ -18,6 +18,7 @@
 package com.example.exportaves;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -114,8 +115,18 @@ public class help_menu_activity extends Activity {
 		_6__r_n_se_ildi = (TextView) findViewById(R.id._6__r_n_se_ildi);
 	
 		
-		//custom code goes here
-	
+		//last screen java kodu eklenicek  
+/*
+		g_nder.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// login_menu_activity adlı yeni aktiviteyi başlatmak için Intent
+				Intent intent = new Intent(help_menu_activity.this, last_screen_activity.class);
+				startActivity(intent);
+			}
+		});
+*/
+
 	}
 }
 	

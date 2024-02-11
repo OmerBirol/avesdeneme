@@ -68,27 +68,19 @@
 				android:id="@+id/_bg__circle_ek1"
 				android:layout_width="255dp"
 				android:layout_height="255dp"
-				android:layout_marginStart="0dp"
-				android:layout_marginTop="0dp"
+				android:layout_marginStart="80dp"
+				android:layout_marginTop="100dp"
 				android:background="@drawable/_bg__circle_ek1_shape" />
 
 			<ImageView
 				android:id="@+id/icon_08"
 				android:layout_width="95.16dp"
 				android:layout_height="107.17dp"
-				android:layout_marginStart="79.46dp"
-				android:layout_marginTop="73.91dp"
+				android:layout_marginStart="159.46dp"
+				android:layout_marginTop="153.91dp"
 				android:contentDescription="icon_08"
 				android:src="@drawable/icon_08" />
 
-			<ImageView
-				android:id="@+id/clip_path_group"
-				android:layout_width="255dp"
-				android:layout_height="255dp"
-				android:layout_marginStart="0dp"
-				android:layout_marginTop="255dp"
-				android:contentDescription="clip_path_group"
-				android:src="@drawable/clip_path_group" />
 
 			<TextView
 				android:id="@+id/yardim__ste"
